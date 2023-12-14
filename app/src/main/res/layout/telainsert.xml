@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/etidade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telainsert">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="422dp"
+        android:layout_height="756dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/branco" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="286dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/etquantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="18"
+        android:textColor="#8e8e8e"
+        android:textColorHint="#8e8e8e"
+        android:hint="Quantidade"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etNome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNome"
+        app:layout_constraintTop_toBottomOf="@+id/etNome" />
+
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:ems="18"
+        android:textColor="#8e8e8e"
+        android:textColorHint="#8e8e8e"
+        android:hint="Nome do produto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etquantidadeEs"
+        android:layout_width="380dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:ems="18"
+        android:textColor="#8e8e8e"
+        android:textColorHint="#8e8e8e"
+        android:hint="Estoque"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/etquantidade"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etquantidade"
+        app:layout_constraintTop_toBottomOf="@+id/etquantidade" />
+
+    <Button
+        android:id="@+id/bListar"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button_backgroud"
+        android:onClick="mListar"
+        android:text="Lista de produtos"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_backgroud"
+        android:onClick="minserir"
+        android:text="Inserir produtos "
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bListar"
+        app:layout_constraintStart_toStartOf="@+id/etquantidadeEs"
+        app:layout_constraintTop_toBottomOf="@+id/etquantidadeEs" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
